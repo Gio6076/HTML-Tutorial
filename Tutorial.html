@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta are information you want to be seen within the website -->
+    <meta name ="keywords" content="HTML, Basic Guides">
+    <meta name="author" content="Gio Ebarola">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <!-- If you want to refresh every 2 seconds. Seconds is based on the content -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Lang</title>
+
+    <h1>This is my Website</h1>
+    <hr> <!-- Horizontal line  -->
+
+    <h1>Hello World</h1> <!-- header -->
+
+    <br> <!--line break-->
+
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cumque aspernatur non eum commodi perferendis, odio odit dolore sint, pariatur asperiores minima rem, ipsum ex similique id nihil delectus fuga!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit amet molestias sapiente ipsum nihil perspiciatis natus mollitia dignissimos itaque quibusdam inventore laudantium quae, maiores, ex dolor beatae animi iure est.</p>
+</head>
+<body style="background-color: rgb(94, 123, 149);">
+    <h4>This is an Unordered List</h4>
+    <!-- Unordered list is bulleted(basta hindi sya ordered) -->
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+            <ul>
+                <li>Nested list</li>
+                <li>Nested list</li>
+                <li>Nested list</li>
+                <li>Nested list</li>
+
+            </ul>
+
+    </ul>
+
+    <h4>This is an Ordered List</h4>
+    <!-- You can edit it by using tag "type" -->
+     <!-- Default type is numbers -->
+    <ol type="A">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+
+    </ol>
+
+    <h4>Description List</h4>
+    <!-- When you want to properly format it -->
+
+    <dt>HTML</dt>
+    <!-- "dt" means description terms -->
+
+    <dd>This adds structure to the webpage</dd>
+    <!-- "dd" means description definition  -->
+
+    <dt>CSS</dt>
+    <dd>This adds style to the webpage</dd>
+    <dt>Java</dt>
+    <dd>This adds function to the webpage</dd>
+
+    <br>
+    <hr>
+
+    <h3>Store hours</h3>
+
+    <table bgcolor="black" width ="700">
+        <tr bgcolor ="grey">
+            <!-- Table Row -->
+
+            <th width="100">Sunday</th>
+            <!-- Table Headers -->
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <!-- So tatapat siya sa headers. Ung first "td", ung tatamaan 
+             niya is ung first "th" -->
+
+            <td>Closed</td>
+            <!-- Table Data -->
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+<hr>
+<br>
+<!-- You can add colors or any style basta may "style" attribute -->
+    <h1 style="color: aquamarine;">Colored Text</h1>
+    <h2 style="color: blueviolet;">Colored Text</h2>
+    <h3 style="color: green;">Colored text</h3>
+
+    <p style="background-color: grey; color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Cum accusantium veritatis iste ullam deserunt sequi beatae earum. 
+        Dolore quod id sed, quasi beatae provident culpa alias labore 
+        repudiandae a asperiores!</p>
+
+<hr>
+<br>
+        <!-- span = adds markup to text or potion of a document -->
+         <!-- div = defines a division of a document -->
+        <div style="background-color: rgb(226, 169, 169);">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ab numquam atque perferendis saepe repudiandae tenetur unde! 
+            Unde, error earum. Quam autem totam officiis iste! Cupiditate 
+            placeat temporibus alias voluptatum voluptate.</p>
+
+         <p><span style="color: rgb(59, 34, 34);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> 
+            Ab numquam atque perferendis saepe repudiandae tenetur unde! 
+            Unde, error earum. Quam autem totam officiis iste! Cupiditate 
+            placeat temporibus alias voluptatum voluptate.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ab numquam atque perferendis saepe repudiandae tenetur unde! 
+            Unde, error earum. Quam autem totam officiis iste! Cupiditate 
+            placeat temporibus alias voluptatum voluptate.</p>
+
+<hr>
+<br>
+            <!-- iframe = embed content from another source into an HTML document
+            ex. used for ads, used in many hacking techniques -->
+
+        <iframe style ="border: 0" src="ad.html" width ="550" height="100"></iframe>
+
+<hr>
+<br>
+
+        <button onclick="doSomething()" style="background-color: rgb(32, 34, 33); color: green; border-radius: 5px;">click me</button>
+        
+        <p id="test">Hello</p>
+
+        <script>
+            function doSomething(){
+                document.getElementById("test").innerHTML="Goodbye"
+            }
+        </script>
+
+<hr>
+<br>
+
+    <form action="action_page.php" method="POST">
+        <div>
+            <label for="fname"> first name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+        </div>
+
+        <br>
+            
+        <div>
+            <label for="lname"> last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="password" name="pass" maxlength="12" placeholder="password" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bdate">birthdate</label>
+            <input type="date" id="bdate" name="bdate">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quantity">quantity</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+
+        <br>
+
+        <div>
+            <!-- Radiobox -->
+            <label for="title">title</label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="M">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="PhD">PhD.</label>
+            <input type="radio" id="PhD" name="title" value="PhD.">
+        </div>
+
+        <br>
+
+        <div> 
+            <!-- Dropdown choice -->
+            <label for="payment">payment</label>
+            <select id="payment" name="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="giftcard">giftcard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <!-- If you'll place 'for' tag, automatic may 'id' tag. Same name -->
+            <label for="subscribe">subscribe</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="don't subscribe">don't subscribe</label>
+            <input type="checkbox" id="don't subscribe" name="don't subscribe">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html> 
